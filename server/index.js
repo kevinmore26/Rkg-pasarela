@@ -15,7 +15,7 @@ app.post("/payment", cors(), async (req, res) => {
 	try {
 		const payment = await stripe.paymentIntents.create({
 			amount,
-			currency: "USD",
+			currency: "PEN",
 			description: "Mascotitas RKG",
 			payment_method: id,
 			confirm: true
